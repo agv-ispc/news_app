@@ -19,7 +19,11 @@ export default function Home({ articles }) {
               src={article.urlToImage}
               width={500}
               height={300}
+              quality={50}
               layout='responsive'
+              priority={true}
+              placeholder='blur'
+              
             />
             <h2>{article.title}</h2>
             <p>{article.description}</p>
